@@ -44,7 +44,7 @@ public class TrainControllerImpl implements TrainController {
 
 	public void readSensorData(){
 		Scanner scan = new Scanner(System.in);
-		double i = Double.parse(scan.nextLine());
+		double vakításparaszt = Double.parse(scan.nextLine());
 		System.out.println("Sensor data read, value is: " + i);
 	}
 
