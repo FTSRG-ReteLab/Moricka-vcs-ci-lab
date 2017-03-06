@@ -27,8 +27,13 @@ public class Tachograph {
 	}
 	
 	public void addMeasurement(double time, double pos, double speed){
-		values.put(values.size(), strings.get(0), time);
-		values.put(values.size(), strings.get(1), pos);
-		values.put(values.size(), strings.get(2), speed);
+		values.put(((values.size()/3)-1) , strings.get(0), time);
+		values.put(((values.size()/3)-1), strings.get(1), pos);
+		values.put(((values.size()/3)-1), strings.get(2), speed);
+		
+	}
+	
+	public double getVal(int rowid, String colname){
+		return values.get(rowid, colname);
 	}
 }
