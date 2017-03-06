@@ -1,5 +1,7 @@
 package hu.bme.mit.train.controller;
 
+import java.util.Scanner;
+
 import hu.bme.mit.train.interfaces.TrainController;
 
 public class TrainControllerImpl implements TrainController {
@@ -44,7 +46,7 @@ public class TrainControllerImpl implements TrainController {
 
 	public void readSensorData(){
 		Scanner scan = new Scanner(System.in);
-		double parasztvak = Double.parse(scan.nextLine());
+		double i = Double.parseDouble(scan.nextLine());
 		System.out.println("Sensor data read, value is: " + i);
 	}
 
